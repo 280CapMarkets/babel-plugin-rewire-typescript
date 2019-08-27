@@ -31,7 +31,16 @@ module.exports = function({ types: t, template }) {
 		!(parent.type === 'ExportSpecifier') &&
 		!(parent.type === 'ImportSpecifier') &&
 		!(parent.type === 'ObjectTypeProperty') &&
-		!(parent.type === 'ClassMethod')
+		!(parent.type === 'ClassMethod') &&
+		    
+		    // Added support for TypeScript
+		    && !(parent.type === 'TSExpressionWithTypeArguments')
+		    && !(parent.type === 'TSInterfaceDeclaration')
+		    && !(parent.type === 'TSTypeQuery')
+		    && !(parent.type === 'TSTypeReference')
+		    && !(parent.type === 'TSEntityName')
+		    && !(parent.type === 'TSQualifiedName')
+		    && !(parent.type === 'Identifier');
 	}
 
 	function doesIdentifierRepresentAValidReference(path, variableBinding, rewireInformation) {
