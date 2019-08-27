@@ -1,19 +1,19 @@
 {
-  "name": "babel-plugin-rewire-typescript",
+  "name": "@280capmarkets/babel-plugin-rewire-typescript",
   "version": "1.2.0",
   "description": "A babel plugin adding the ability to rewire module dependencies. This enables to mock modules for testing purposes.",
   "main": "lib/babel-plugin-rewire.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha && ./node_modules/.bin/mocha usage-tests",
-    "build": "./node_modules/.bin/babel src --out-dir lib",
-    "prepublish": "./node_modules/.bin/babel src --out-dir lib"
+    "test": "mocha && ./node_modules/.bin/mocha usage-tests",
+    "build": "babel src --out-dir lib",
+    "prepublish": "babel src --out-dir lib"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/@280capmarkets/babel-plugin-rewire-typescript.git"
+    "url": "git://github.com/%40280capmarkets/babel-plugin-rewire-typescript.git"
   },
   "bugs": {
     "url": "https://github.com/@280capmarkets/babel-plugin-rewire-typescript/issues"
@@ -27,24 +27,11 @@
   ],
   "author": "r.binna@synedra.com",
   "contributors": [
-    {
-      "name": "Robert Binna",
-      "email": "r.binna@synedra.com"
-    },
-    {
-      "name": "Peet Goddard"
-    },
-    {
-      "name": "Eli White",
-      "email": "github@eli-white.com"
-    },
-    {
-      "name": "Philip Spitzlinger",
-      "email": "p.spitzlinger@synedra.com"
-    },
-    {
-      "name": "Gustaf Dalemar"
-    }
+    "Robert Binna <r.binna@synedra.com>",
+    "Peet Goddard",
+    "Eli White <github@eli-white.com>",
+    "Philip Spitzlinger <p.spitzlinger@synedra.com>",
+    "Gustaf Dalemar"
   ],
   "license": "ISC",
   "devDependencies": {
@@ -80,5 +67,9 @@
     "regenerator-runtime": "^0.9.5",
     "should": "^9.0.2",
     "sinon": "^1.17.4"
+  },
+  "homepage": "https://github.com/%40280capmarkets/babel-plugin-rewire-typescript#readme",
+  "directories": {
+    "test": "test"
   }
 }
