@@ -31,7 +31,7 @@ module.exports = function({ types: t, template }) {
 		!(parent.type === 'ExportSpecifier') &&
 		!(parent.type === 'ImportSpecifier') &&
 		!(parent.type === 'ObjectTypeProperty') &&
-		!(parent.type === 'ClassMethod') &&
+		!(parent.type === 'ClassMethod')
 		    
 		    // Added support for TypeScript
 		    && !(parent.type === 'TSExpressionWithTypeArguments')
