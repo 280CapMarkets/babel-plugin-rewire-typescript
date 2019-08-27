@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/%40280capmarkets/babel-plugin-rewire-typescript.git"
+    "url": "git+https://github.com/280CapMarkets/babel-plugin-rewire-typescript.git"
   },
   "bugs": {
     "url": "https://github.com/@280capmarkets/babel-plugin-rewire-typescript/issues"
